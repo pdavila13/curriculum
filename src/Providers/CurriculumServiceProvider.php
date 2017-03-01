@@ -48,7 +48,7 @@ class CurriculumServiceProvider extends ServiceProvider
             [
                 __DIR__.'/../../database/factories/StudyFactory.php' =>
                     database_path() . '/factories/StudyFactory.php'
-            ],"scool_curriculum"
+            ], "scool_curriculum"
         );
     }
 }
