@@ -31,7 +31,6 @@ class StudyRepositoryEloquent extends BaseRepository implements StudyRepository
     */
     public function validator()
     {
-
         return StudyValidator::class;
     }
 
