@@ -49,7 +49,7 @@ class CurriculumServiceProvider extends ServiceProvider
     {
         $this->publishes(
 
-            ScoolCurriculum::factories(),"scool_curriculum"
+            ScoolCurriculum::factories(), "scool_curriculum"
         );
     }
 
@@ -60,12 +60,11 @@ class CurriculumServiceProvider extends ServiceProvider
     {
         $this->publishes(
 
-            ScoolCurriculum::configs(),"scool_curriculum"
+            ScoolCurriculum::configs(), "scool_curriculum"
         );
 
         $this->mergeConfigFrom(
             SCOOL_CURRICULUM_PATH . '/config/curriculum.php', 'scool_curriculum'
         );
     }
-
 }
