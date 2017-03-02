@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Transformers;
+namespace Scool\Curriculum\Transformer;
 
 use League\Fractal\TransformerAbstract;
 use App\Entities\Study;

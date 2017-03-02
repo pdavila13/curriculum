@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Presenters;
+namespace Scool\Curriculum\Presenters;
 
 use App\Transformers\StudyTransformer;
 use Prettus\Repository\Presenter\FractalPresenter;

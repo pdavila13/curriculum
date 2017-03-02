@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories;
+namespace Scool\Curriculum\Repositories;
 
 use Prettus\Repository\Contracts\RepositoryInterface;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Scool\Curriculum\Http\Controllers;
 
 use Prettus\Validator\Contracts\ValidatorInterface;
 use Prettus\Validator\Exceptions\ValidatorException;

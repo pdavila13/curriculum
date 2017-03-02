@@ -10,7 +10,7 @@
 |
 */
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(Scool\Curriculum\Study::class, function (Faker\Generator $faker) {
+$factory->define(Scool\Curriculum\Models\Study::class, function (Faker\Generator $faker) {
     static $password;
     return [
         'name' => $faker->name,
