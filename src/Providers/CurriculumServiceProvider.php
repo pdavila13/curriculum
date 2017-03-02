@@ -3,6 +3,7 @@
 namespace Scool\Curriculum\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Scool\Curriculum\ScoolCurriculum;
 
 class CurriculumServiceProvider extends ServiceProvider
 {
@@ -14,7 +15,7 @@ class CurriculumServiceProvider extends ServiceProvider
     public function register()
     {
         if (!defined('SCOOL_CURRICULUM_PATH')) {
-            efine('SCOOL_CURRICULUM_PATH', realpath(__DIR__.'/../../'));
+            define('SCOOL_CURRICULUM_PATH', realpath(__DIR__.'/../../'));
         }
     }
 
@@ -47,10 +48,21 @@ class CurriculumServiceProvider extends ServiceProvider
     private function publishFactories()
     {
         $this->publishes(
-            [
-                __DIR__.'/../../database/factories/StudyFactory.php' =>
-                    database_path() . '/factories/StudyFactory.php'
-            ], "scool_curriculum"
+            ScoolCurriculum::factories(),"scool_curriculum"
+        );
+    }
+
+    /**
+     * Publish config
+     */
+    private function publishConfig()
+    {
+        $this->publishes(
+            ScoolCurriculum::configs(),"scool_curriculum"
+        );
+
+        $this->mergeConfigFrom(
+            SCOOL_CURRICULUM_PATH . '/config/curriculum.php', 'scool_curriculum'
         );
     }
 }
