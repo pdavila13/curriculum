@@ -31,7 +31,6 @@ class ShitsRepositoryEloquent extends BaseRepository implements ShitsRepository
     */
     public function validator()
     {
-
         return ShitsValidator::class;
     }
 
