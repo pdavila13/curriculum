@@ -22,6 +22,7 @@ class CurriculumServiceProvider extends ServiceProvider
 
         $this->registerNamesServiceProvide();
         $this->registerStateFulServiceProvide();
+        $this->bindRepositories();
 
         $this->app->bind(\Scool\Curriculum\Repositories\StudyRepository::class, \Scool\Curriculum\Repositories\StudyRepositoryEloquent::class);
         //:end-bindings:
@@ -84,11 +85,22 @@ class CurriculumServiceProvider extends ServiceProvider
     }
 
     /**
-     Register acacha/names Service Provider
-    */
+     * Register acacha/names Service Provider
+     */
     protected function registerStateFulServiceProvide()
     {
         $this->app->register(StatefulServiceProvider::class);
+    }
+
+    /**
+     * Respositories
+     */
+    public function bindRepositories()
+    {
+        $this->app->bind(
+            \Scool\Curriculum\Repositories\StudyRepository::class,
+            \Scool\Curriculum\Repositories\StudyRepositoryEloquent::class);
+        //:end-bindings:
     }
 
     /**
