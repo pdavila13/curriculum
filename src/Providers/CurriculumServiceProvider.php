@@ -3,6 +3,7 @@
 namespace Scool\Curriculum\Providers;
 
 use Acacha\Names\Providers\NamesServiceProvider;
+use Acacha\Stateful\Providers\StatefulServiceProvider;
 use Illuminate\Support\ServiceProvider;
 use Scool\Curriculum\ScoolCurriculum;
 
@@ -20,6 +21,7 @@ class CurriculumServiceProvider extends ServiceProvider
         }
 
         $this->registerNamesServiceProvide();
+        $this->registerStateFulServiceProvide();
 
         $this->app->bind(\Scool\Curriculum\Repositories\StudyRepository::class, \Scool\Curriculum\Repositories\StudyRepositoryEloquent::class);
         //:end-bindings:
@@ -79,6 +81,14 @@ class CurriculumServiceProvider extends ServiceProvider
     protected function registerNamesServiceProvide()
     {
         $this->app->register(NamesServiceProvider::class);
+    }
+
+    /**
+     Register acacha/names Service Provider
+    */
+    protected function registerStateFulServiceProvide()
+    {
+        $this->app->register(StatefulServiceProvider::class);
     }
 
     /**
