@@ -102,14 +102,14 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 [ico-version]: https://img.shields.io/packagist/v/scool/curriculum.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-style]: https://styleci.io/repos/83361708/shield?branch=master
+[ico-style]: https://styleci.io/repos/83540000/shield?branch=master
 [ico-travis]: https://travis-ci.org/pdavila13/curriculum.svg?branch=master
 [ico-scrutinizer]: https://scrutinizer-ci.com/g/pdavila13/curriculum/badges/build.png?b=master
 [ico-code-quality]: https://scrutinizer-ci.com/g/pdavila13/curriculum/badges/quality-score.png?b=master
 [ico-downloads]: https://img.shields.io/packagist/dt/scool/curriculum.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/pdavila13/curriculum
-[link-style]: https://styleci.io/repos/83361708
+[link-style]: https://styleci.io/repos/83540000
 [link-travis]: https://travis-ci.org/pdavila13/curriculum
 [link-scrutinizer]: https://scrutinizer-ci.com/g/pdavila13/curriculum/build-status/master
 [link-code-quality]: https://scrutinizer-ci.com/g/pdavila13/curriculum/?branch=master
