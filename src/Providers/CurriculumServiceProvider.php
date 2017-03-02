@@ -17,6 +17,9 @@ class CurriculumServiceProvider extends ServiceProvider
         if (!defined('SCOOL_CURRICULUM_PATH')) {
             define('SCOOL_CURRICULUM_PATH', realpath(__DIR__.'/../../'));
         }
+
+        $this->app->bind(\Scool\Curriculum\Repositories\StudyRepository::class, \Scool\Curriculum\Repositories\StudyRepositoryEloquent::class);
+        //:end-bindings:
     }
 
     /**
@@ -28,6 +31,20 @@ class CurriculumServiceProvider extends ServiceProvider
     {
         $this->loadMigrations();
         $this->publishFactories();
+        $this->defineRoutes();
+    }
+
+    /**
+     * Define the AdminLTETemplate routes.
+     */
+    protected function defineRoutes()
+    {
+        if (!$this->app->routesAreCached()) {
+            $router = app('router');
+            $router->group(['namespace' => 'Scool\Curriculum\Http\Controllers'], function () {
+                require __DIR__.'/../Http/routes.php';
+            });
+        }
     }
 
     /**
