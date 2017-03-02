@@ -4,6 +4,7 @@ Route::group([
     'middleware' => 'web'], function () {
         Route::group(['middleware' => 'auth'], function () {
             Route::resource('studies', 'StudiesController');
+            Route::resource('shits', 'ShitsController');
         });
     });
 
@@ -14,5 +15,6 @@ Route::group([
     //Route::group(['prefix' => 'v1','middleware' => 'auth:api'], function () {
     Route::group(['prefix' => 'v1'], function () {
         Route::resource('studies', 'StudiesController');
+        Route::resource('shits', 'ShitsController');
     });
 });

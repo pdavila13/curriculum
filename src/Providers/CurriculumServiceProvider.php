@@ -93,13 +93,15 @@ class CurriculumServiceProvider extends ServiceProvider
     }
 
     /**
-     * Respositories
-     */
+     * Respositories     */
     public function bindRepositories()
     {
         $this->app->bind(
             \Scool\Curriculum\Repositories\StudyRepository::class,
             \Scool\Curriculum\Repositories\StudyRepositoryEloquent::class);
+
+        $this->app->bind(\Scool\Curriculum\Repositories\ShitsRepository::class,
+            \Scool\Curriculum\Repositories\ShitsRepositoryEloquent::class);
         //:end-bindings:
     }
 
