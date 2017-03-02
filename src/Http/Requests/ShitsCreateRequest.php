@@ -2,6 +2,7 @@
 
 namespace Scool\Curriculum\Http\Requests;
 
+use Auth;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ShitsCreateRequest extends FormRequest
@@ -13,7 +14,10 @@ class ShitsCreateRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        if (Auth::user()->can('update shits'))
+        {
+            return true;
+        }
     }
 
     /**
