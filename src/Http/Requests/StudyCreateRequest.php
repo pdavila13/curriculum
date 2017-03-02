@@ -2,6 +2,7 @@
 
 namespace Scool\Curriculum\Http\Requests;
 
+use Auth;
 use Illuminate\Foundation\Http\FormRequest;
 
 class StudyCreateRequest extends FormRequest
@@ -13,7 +14,7 @@ class StudyCreateRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return Auth::user()->can('create studies');
     }
 
     /**

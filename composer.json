@@ -18,7 +18,8 @@
         "acacha/names": "dev-master",
         "acacha/l5-repository": "dev-master",
         "acacha/stateful-eloquent": "dev-master",
-        "scool/foundation": "dev-master"
+        "scool/foundation": "dev-master",
+        "spatie/laravel-permission": "^1.11"
     },
     "autoload": {
         "psr-4": {
