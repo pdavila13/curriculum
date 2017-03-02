@@ -48,6 +48,7 @@ class CurriculumServiceProvider extends ServiceProvider
     private function publishFactories()
     {
         $this->publishes(
+
             ScoolCurriculum::factories(),"scool_curriculum"
         );
     }
@@ -58,6 +59,7 @@ class CurriculumServiceProvider extends ServiceProvider
     private function publishConfig()
     {
         $this->publishes(
+
             ScoolCurriculum::configs(),"scool_curriculum"
         );
 
@@ -65,4 +67,5 @@ class CurriculumServiceProvider extends ServiceProvider
             SCOOL_CURRICULUM_PATH . '/config/curriculum.php', 'scool_curriculum'
         );
     }
+
 }
