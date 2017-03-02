@@ -13,7 +13,9 @@ class CurriculumServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        if (!defined('SCOOL_CURRICULUM_PATH')) {
+            efine('SCOOL_CURRICULUM_PATH', realpath(__DIR__.'/../../'));
+        }
     }
 
     /**
