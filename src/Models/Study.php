@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Study extends Model
 {
     use nameable;
+
+    protected $fillable = ['name'];
 }
