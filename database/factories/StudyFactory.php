@@ -15,5 +15,4 @@ $factory->define(Scool\Curriculum\Study::class, function (Faker\Generator $faker
     return [
         'name' => $faker->name,
     ];
-
 });
