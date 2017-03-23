@@ -4,9 +4,9 @@ namespace Scool\Curriculum\Repositories;
 
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
-use App\Repositories\ShitsRepository;
-use App\Entities\Shits;
-use App\Validators\ShitsValidator;
+use Scool\Curriculum\Repositories\ShitsRepository;
+use Scool\Curriculum\Entities\Shits;
+use Scool\Curriculum\Validators\ShitsValidator;
 
 /**
  * Class ShitsRepositoryEloquent

@@ -2,7 +2,7 @@
 
 namespace Scool\Curriculum\Presenters;
 
-use App\Transformers\StudyTransformer;
+use Scool\Curriculum\Transformers\StudyTransformer;
 use Prettus\Repository\Presenter\FractalPresenter;
 
 /**

@@ -3,7 +3,7 @@
 namespace Scool\Curriculum\Transformers;
 
 use League\Fractal\TransformerAbstract;
-use App\Entities\Shits;
+use Scool\Curriculum\Entities\Shits;
 
 /**
  * Class ShitsTransformer

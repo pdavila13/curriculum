@@ -4,10 +4,10 @@ namespace Scool\Curriculum\Http\Controllers;
 
 use Prettus\Validator\Contracts\ValidatorInterface;
 use Prettus\Validator\Exceptions\ValidatorException;
-use App\Http\Requests\StudyCreateRequest;
-use App\Http\Requests\StudyUpdateRequest;
-use App\Repositories\StudyRepository;
-use App\Validators\StudyValidator;
+use Scool\Curriculum\Http\Requests\StudyCreateRequest;
+use Scool\Curriculum\Http\Requests\StudyUpdateRequest;
+use Scool\Curriculum\Repositories\StudyRepository;
+use Scool\Curriculum\Validators\StudyValidator;
 
 class StudiesController extends Controller
 {

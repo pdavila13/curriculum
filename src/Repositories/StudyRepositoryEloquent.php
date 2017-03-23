@@ -4,9 +4,9 @@ namespace Scool\Curriculum\Repositories;
 
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
-use App\Repositories\StudyRepository;
-use App\Entities\Study;
-use App\Validators\StudyValidator;
+use Scool\Curriculum\Repositories\StudyRepository;
+use Scool\Curriculum\Entities\Study;
+use Scool\Curriculum\Validators\StudyValidator;
 
 /**
  * Class StudyRepositoryEloquent

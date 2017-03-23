@@ -4,10 +4,10 @@ namespace Scool\Curriculum\Http\Controllers;
 
 use Prettus\Validator\Contracts\ValidatorInterface;
 use Prettus\Validator\Exceptions\ValidatorException;
-use App\Http\Requests\ShitsCreateRequest;
-use App\Http\Requests\ShitsUpdateRequest;
-use App\Repositories\ShitsRepository;
-use App\Validators\ShitsValidator;
+use Scool\Curriculum\Http\Requests\ShitsCreateRequest;
+use Scool\Curriculum\Http\Requests\ShitsUpdateRequest;
+use Scool\Curriculum\Repositories\ShitsRepository;
+use Scool\Curriculum\Validators\ShitsValidator;
 
 class ShitsController extends Controller
 {
