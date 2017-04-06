@@ -12,6 +12,7 @@
             "role": "Developer"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "laravel/framework": "5.4.*",
         "fzaninotto/faker": "^1.6",
