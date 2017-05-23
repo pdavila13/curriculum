@@ -1,5 +1,7 @@
 <?php
 
+namespace Scool\Curriculum\Database\Seeds;
+
 use Illuminate\Database\Seeder;
 use Scool\Curriculum\Models\Law;
 
