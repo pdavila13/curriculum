@@ -9,6 +9,11 @@ use Scool\Curriculum\Http\Requests\StudyUpdateRequest;
 use Scool\Curriculum\Repositories\StudyRepository;
 use Scool\Curriculum\Validators\StudyValidator;
 
+/**
+ * Class StudiesController.
+ *
+ * @package Scool\Curriculum\Http\Controllers
+ */
 class StudiesController extends Controller
 {
 
