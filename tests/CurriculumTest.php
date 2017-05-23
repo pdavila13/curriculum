@@ -1,8 +1,8 @@
 <?php
 
-namespace League\Skeleton;
+namespace Scool\Curriculum\Traits;
 
-class ExampleTest extends \PHPUnit_Framework_TestCase
+class CurriculumTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * Test that true does in fact equal true

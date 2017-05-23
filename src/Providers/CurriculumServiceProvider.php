@@ -7,12 +7,15 @@ use Acacha\Stateful\Providers\StatefulServiceProvider;
 use Illuminate\Support\ServiceProvider;
 use Scool\Curriculum\ScoolCurriculum;
 
+/**
+ * Class CurriculumServiceProvider.
+ *
+ * @package Scool\Curriculum\Providers
+ */
 class CurriculumServiceProvider extends ServiceProvider
 {
     /**
-     * Register the application services.
-     *
-     * @return void
+     * Register package services.
      */
     public function register()
     {
