@@ -6,7 +6,7 @@ use Prettus\Repository\Contracts\RepositoryInterface;
 
 /**
  * Interface StudyRepository
- * @package namespace App\Repositories;
+ * @package namespace Scool\Curriculum\Repositories;
  */
 interface StudyRepository extends RepositoryInterface
 {
