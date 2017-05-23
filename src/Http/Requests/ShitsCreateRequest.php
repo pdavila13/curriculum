@@ -2,8 +2,8 @@
 
 namespace Scool\Curriculum\Http\Requests;
 
-use Auth;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Auth;
 
 class ShitsCreateRequest extends FormRequest
 {

@@ -2,9 +2,14 @@
 
 namespace Scool\Curriculum\Http\Requests;
 
-use Auth;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Auth;
 
+/**
+ * Class StudyCreateRequest.
+ *
+ * @package Scool\Curriculum\Http\Requests
+ */
 class StudyCreateRequest extends FormRequest
 {
     /**
@@ -25,7 +30,8 @@ class StudyCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'name'  =>  'required',
+            'name' => 'required',
+            'law_id' => 'required',
         ];
     }
 }

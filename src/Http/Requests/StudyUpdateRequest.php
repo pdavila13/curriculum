@@ -3,7 +3,13 @@
 namespace Scool\Curriculum\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Auth;
 
+/**
+ * Class StudyUpdateRequest.
+ *
+ * @package Scool\Curriculum\Http\Requests
+ */
 class StudyUpdateRequest extends FormRequest
 {
     /**
@@ -13,7 +19,7 @@ class StudyUpdateRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return Auth::user()->can('edit studies');
     }
 
     /**
