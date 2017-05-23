@@ -3,11 +3,12 @@
 namespace Scool\Curriculum\Transformer;
 
 use League\Fractal\TransformerAbstract;
-use App\Entities\Study;
+use Scool\Curriculum\Models\Study;
 
 /**
- * Class StudyTransformer
- * @package namespace App\Transformers;
+ * Class StudyTransformer.
+ *
+ * @package namespace Scool\Curriculum\Transformers;
  */
 class StudyTransformer extends TransformerAbstract
 {
