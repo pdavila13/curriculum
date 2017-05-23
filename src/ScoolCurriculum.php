@@ -9,6 +9,8 @@ class ScoolCurriculum
         return [
             SCOOL_CURRICULUM_PATH . '/database/factories/StudyFactory.php' =>
                 database_path('/factories/StudyFactory.php'),
+            SCOOL_CURRICULUM_PATH . '/database/factories/LawFactory.php' =>
+                database_path('/factories/LawFactory.php'),
         ];
     }
 
