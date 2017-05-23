@@ -2,13 +2,14 @@
 
 namespace Scool\Curriculum\Presenters;
 
-use Scool\Curriculum\Transformers\StudyTransformer;
+
 use Prettus\Repository\Presenter\FractalPresenter;
+use Scool\Curriculum\Transformer\StudyTransformer;
 
 /**
  * Class StudyPresenter
  *
- * @package namespace App\Presenters;
+ * @package namespace Scool\Curriculum\Presenters;
  */
 class StudyPresenter extends FractalPresenter
 {
