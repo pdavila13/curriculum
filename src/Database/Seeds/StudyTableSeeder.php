@@ -1,8 +1,10 @@
 <?php
 
-use App\User;
+namespace Scool\Curriculum\Database\Seeds;
+
 use Illuminate\Database\Seeder;
 use Scool\Curriculum\Models\Study;
+use Scool\Foundation\User;
 
 class StudyTableSeeder extends Seeder
 {
