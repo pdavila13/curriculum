@@ -18,15 +18,25 @@ class StudiesController extends Controller
 {
 
     /**
+     * Repository object
+     *
      * @var StudyRepository
      */
     protected $repository;
 
     /**
+     * Validator object
+     *
      * @var StudyValidator
      */
     protected $validator;
 
+    /**
+     * StudiesController constructor.
+     *
+     * @param StudyRepository $repository
+     * @param StudyValidator $validator
+     */
     public function __construct(StudyRepository $repository, StudyValidator $validator)
     {
         $this->repository = $repository;

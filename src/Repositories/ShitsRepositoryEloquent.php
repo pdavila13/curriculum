@@ -5,7 +5,7 @@ namespace Scool\Curriculum\Repositories;
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
 use Scool\Curriculum\Repositories\ShitsRepository;
-use Scool\Curriculum\Entities\Shits;
+use Scool\Curriculum\Models\Shits;
 use Scool\Curriculum\Validators\ShitsValidator;
 
 /**
