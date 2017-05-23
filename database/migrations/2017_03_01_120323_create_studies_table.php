@@ -17,7 +17,7 @@ class CreateStudiesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->integer('law_id')->unsigned();
-            $table->string('state')->nullable();
+            $table->boolean('state');
             $table->timestamps();
         });
     }

@@ -13,5 +13,6 @@
 $factory->define(Scool\Curriculum\Models\Study::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
+        'state' => $faker->boolean
     ];
 });
